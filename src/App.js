@@ -43,8 +43,7 @@ function App() {
     amount={expense[1].amount} 
     date={expense[1].date}
      />
-
-<ExpenseItem 
+    <ExpenseItem 
     title={expense[2].title} 
     amount={expense[2].amount} 
     date={expense[2].date}
@@ -55,6 +54,7 @@ function App() {
     amount={expense[3].amount} 
     date={expense[3].date}
      />
+
 
     </div>
   );
