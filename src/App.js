@@ -1,8 +1,10 @@
 //import logo from './logo.svg';
 //import './App.css';
 //import Test from  './Test.js';
-//import Test2 from  './Test2.js';
-import ExpenseItem from './components/ExpenseItem.js'
+//import Test2 from  './Test2.js'
+import NewExpense from './components/NewExpenses/NewExpense.js';
+//import ExpenseItem from './components/ExpenseItem.js'
+import Expenses from './components/Expenses/Expenses'
 function App() {
   const expense = [
     {
@@ -31,29 +33,8 @@ function App() {
   ];
   return (
     <div>
-     
-    <ExpenseItem 
-    title={expense[0].title} 
-    amount={expense[0].amount} 
-    date={expense[0].date}
-     />
-
-   <ExpenseItem 
-    title={expense[1].title} 
-    amount={expense[1].amount} 
-    date={expense[1].date}
-     />
-    <ExpenseItem 
-    title={expense[2].title} 
-    amount={expense[2].amount} 
-    date={expense[2].date}
-     />
-
-<ExpenseItem 
-    title={expense[3].title} 
-    amount={expense[3].amount} 
-    date={expense[3].date}
-     />
+      <NewExpense/>
+    <Expenses items = {Expenses} />
 
 
     </div>
