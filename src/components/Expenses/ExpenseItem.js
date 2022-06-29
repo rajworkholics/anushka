@@ -5,9 +5,9 @@ import './ExpenseItem.css'
 
  const ExpenseItem =(props) => {
 
-   // let title = props.title
-    const [title ,setTitle] = useState(props.tittle)
-       title = 'update!'
+   
+    const [title ,setTitle] = useState(props.title)
+       //title = 'update!';
        console.log('expenseitem evaluted by react') ;
 
        const clickHandler = () => {
